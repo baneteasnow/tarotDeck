@@ -7,6 +7,7 @@ const apiURL = "https://tarot-api-3hv5.onrender.com/api/v1/cards/random?n=1"
 
 const getCard = async function () {
 	try {
+		console.log("clicked")
 		const response = await fetch(apiURL)
 		const data = await response.json()
 		console.log(data.cards[0].name_short)
